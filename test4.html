@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+    .table th{
+        color: blueviolet;
+        width: 250px;
+    }
+
+    .table td{
+        color: rgb(19, 140, 196);
+        text-align: center;
+        justify-content: space-evenly;
+    }
+</style>
+
+</head>
+<body>
+    <table class="table" style = "border: 1px solid orange">
+        <tr>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Password</th>
+            <th>Address</th>
+            <th>NIC</th>
+        </tr>
+
+            <tr>
+                <td id="name"></td>
+                <td id="email"></td>
+                <td id="password"></td>
+                <td id="addr"></td>
+                <td id="nic"></td>
+            </tr>
+
+    </table>
+
+    <script>
+            var name = prompt("enter your name")
+            var email= prompt("enter your email")
+            var password = prompt("enter your password")
+            var addr = prompt("enter your address")
+            var nic = prompt("enter your nic number")
+
+
+
+        document.getElementById("name").innerHTML = name;
+        document.getElementById("email").innerHTML = email;
+        document.getElementById("password").innerHTML = password;
+        document.getElementById("addr").innerHTML = addr;
+        document.getElementById("nic").innerHTML = nic;
+
+
+
+
+
+
+
+
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Function</title>
+</head>
+<body>
+    
+<button onclick="myfunction()">Touch me</button>
+    
+    <script>
+        function myfunction(){
+            document.write("its working"+"<br>")
+        }
+
+        function sum(value1, value2){
+            document.write("<br>"+"<br>"+"Total sum is:  ", + value1+value2 )
+            document.write("<br>"+"Total multiply is:  ", + value1*value2 +"<br>")
+        }    
+            
+    sum(10,20)
+var first_no = parseInt(prompt("Enter first number"))
+var second_no = parseInt(prompt("Enter second number"))
+var calc = prompt("Enter the operator (*,+,-,/, [% modulus])")
+
+        if(calc== "+"){
+            document.write("<br>"+"The sum is: ",+ first_no+second_no)
+        }else if(calc== "-"){
+            document.write("<br>"+"The minus is: ",+ first_no-second_no)
+        }else if(calc== "*"){
+            document.write("<br>"+"The muultiplication is: ",+ first_no*second_no)
+        }else if(calc== "/"){
+            document.write("<br>"+"The sudivision is: ",+ first_no/second_no)
+        }else if(calc== "%"){
+            document.write("<br>"+"The reminder from 1st is: ",+ first_no%second_no)
+        }
+    
+    </script>
+
+</body>
+</html>

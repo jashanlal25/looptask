@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <p id="error"></p>
+    <form action="">
+        <input type="text" id="name" placeholder="Name"> <span id="n_msg"></span>
+        <br><br>
+        <input type="email" id="email" placeholder="Email"> <span id="em_msg"></span>
+        <br><br>
+        <input type="password" id="password" placeholder="Password"><span id="p_msg"></span>
+        <br><br>
+        <input type="password" id="repassword" placeholder="Retype Password"><span id="rp_msg"></span>
+        <br><br>
+        <input type="checkbox" name="" id="" onclick="showPassword()"><label for="">Show Password</label><br><br>
+        <button type="button" onclick="login()">Login</button>
+    </form>
+
+
+    <script>
+
+        function login() {
+
+            let name = document.getElementById("name")
+            let email = document.getElementById("email")
+            let password = document.getElementById("password")
+            let repassword = document.getElementById("repassword")
+
+            // var n_msg = document.getElementById("n_msg")
+            // var em_msg = document.getElementById("em_msg")
+            // var p_msg = document.getElementById("p_msg")
+            // var rp_msg = document.getElementById("rp_msg")
+
+            let error = ""
+
+            if (name.value == "") {
+                n_msg.innerHTML = "name is required"
+                error += "name is required"
+            } else {
+                n_msg.innerHTML = ""
+            }
+
+
+            if (email.value == "") {
+                em_msg.innerHTML = "email is required"
+                error += "email is required"
+            } else {
+                em_msg.innerHTML = ""
+            }
+
+            if (password.value == "") {
+                p_msg.innerHTML = "password is required"
+                error += "password is required"
+            } else {
+                p_msg.innerHTML = ""
+            }
+            if (repassword.value == "") {
+                rp_msg.innerHTML = "re type password is required"
+                error += "re type password is required"
+            } else {
+                rp_msg.innerHTML = ""
+                
+            }
+///sample
+if (error == "") {
+                // Nested Condition 
+                if (email.value == "abc@gmail.com" && pass.value == "abc123") {
+                    location.assign("dashboard.html")
+                }
+                else if (email.value != "abc@gmail.com" && pass.value == "abc123") {
+                    em_msg.innerHTML = "Email Not Match"
+                }
+
+                else if (email.value == "abc@gmail.com" && pass.value != "abc123") {
+                    p_msg.innerHTML = "Password Not Match"
+
+                } else {
+                    em_msg.innerHTML = "Email Not Match"
+                    p_msg.innerHTML = "Password Not Match"
+                }
+            }
+
+        
+//sample
+
+
+
+            // if (error == "") {
+            //     if (email.value == "abc@gmail.com" && password.value == "abc" && repassword.value == "abc")
+            //         document.write("Welcome")
+            // }
+
+            // else if (email.value != "abc@gmail.com" && password.value == "abc") {
+            //     em_msg.innerHTML = "Email is inaccurate"
+
+            //     } else if (email.value == "abc@gmail.com" && password.value != "abc" && repassword.value == "abc") {
+            //         p_msg.innerHTML = "Only password is inacurate"
+
+            //     } else if (email.value == "abc@gmail.com" && password.value == "abc" && repassword.value != "abc") {
+            //         rp_msg.innerHTML = "Only repassword is inacurate"
+
+            //     } else if (email.value == "abc@gmail.com" && password.value != "abc" && repassword.value != "abc") {
+            //         p_msg.innerHTML="both password & retype password are inacurate"
+            //         // rp_msg.innerHTML="both password & retype password are inacurate"
+
+            // } else {
+            //     em_msg.innerHTML = "Email Not Match"
+            //     p_msg.innerHTML = "Password Not Match"
+
+            // }
+
+        }
+
+        function showPassword() {
+            let pass = document.getElementById("password")
+            let repass = document.getElementById("repassword")
+
+
+            if (pass.type == 'password' && repass.type == 'password') {
+                pass.type = 'text'
+                repass.type = 'text'
+            } else {
+                pass.type = 'password'
+                repass.type = 'password'
+            }
+
+        }
+
+
+
+
+
+
+
+    </script>
+
+</body>
+
+</html>

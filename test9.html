@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+<script>
+    // for (var i =1; i<=10; i++){
+    //     document.write(i +" "+ "Hello world"+"<br>")
+    // }
+
+    // var num = prompt("enter number");
+    //     for (var i =1; i<num; i++ ){
+    //         document.write(i +" "+ "Hello world"+"<br>")
+    //     }
+
+    var num = prompt("enter number");    
+    var even_num = "even number: ";
+    var odd_num = "odd number: ";
+    
+    for(i=1; i<=num; i++){
+        if( i % 2 == 0){
+            even_num +=i;
+            
+        }   else{
+            odd_num +=i;
+        }
+        
+    }
+    document.write(even_num + "<br>" + odd_num)
+</script>
+</body>
+</html>

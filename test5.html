@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- nested loop -->
+
+
+    <script>
+        var email = prompt("enter your email address")
+        var password = prompt(" enter your password")
+        var role = prompt("1: Admin 2: user 3:guest")
+        if (email == "jashlal68@gmail.com" && password == "abc") {
+            if (role == 1 || role == "admin" || role == "Admin") {
+                document.write("welcome to admin section")
+            }else if (role == 2|| role == "User" || role == "user") {
+                document.write("welcome to user section")
+            } else if (role == 3 || role == "guest" || role == "Guest"){
+                document.write("welcome to guest section")
+
+            }
+
+
+        }    else{
+                document.write("try again inputs incorrect")
+            }
+
+
+        
+
+
+
+    </script>
+</body>
+
+</html>
